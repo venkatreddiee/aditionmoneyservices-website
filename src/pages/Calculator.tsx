@@ -1,36 +1,62 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SIPCalculator from "@/components/SIPCalculator";
+import RetirementCalculator from "@/components/RetirementCalculator";
+import StepUpSIPCalculator from "@/components/StepUpSIPCalculator";
+import LumpsumCalculator from "@/components/LumpsumCalculator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Calculator, Target, TrendingUp, PieChart } from "lucide-react";
+import { useState } from "react";
 
 const CalculatorPage = () => {
+  const [activeCalculator, setActiveCalculator] = useState<string>('sip');
+
   const calculatorTools = [
     {
+      id: 'sip',
       icon: Calculator,
       title: "SIP Calculator",
       description: "Calculate returns on your systematic investment plan",
       available: true
     },
     {
-      icon: Target,
-      title: "Goal Planner",
-      description: "Plan investments for specific financial goals",
-      available: false
-    },
-    {
+      id: 'retirement',
       icon: TrendingUp,
       title: "Retirement Calculator",
       description: "Plan your retirement corpus and monthly needs",
-      available: false
+      available: true
     },
     {
+      id: 'stepup',
+      icon: Target,
+      title: "Step-Up SIP Calculator",
+      description: "SIP calculator with yearly step-up feature",
+      available: true
+    },
+    {
+      id: 'goal',
       icon: PieChart,
-      title: "Asset Allocation",
-      description: "Optimize your portfolio allocation across asset classes",
-      available: false
+      title: "Financial Goal Calculator",
+      description: "Calculate SIP needed for specific financial goals",
+      available: true
     }
   ];
+
+  const renderCalculator = () => {
+    switch (activeCalculator) {
+      case 'sip':
+        return <SIPCalculator />;
+      case 'retirement':
+        return <RetirementCalculator />;
+      case 'stepup':
+        return <StepUpSIPCalculator />;
+      case 'goal':
+        return <LumpsumCalculator />;
+      default:
+        return <SIPCalculator />;
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -50,10 +76,10 @@ const CalculatorPage = () => {
         </div>
       </section>
 
-      {/* SIP Calculator Section */}
+      {/* Active Calculator Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SIPCalculator />
+          {renderCalculator()}
         </div>
       </section>
 
@@ -69,11 +95,15 @@ const CalculatorPage = () => {
             {calculatorTools.map((tool, index) => {
               const IconComponent = tool.icon;
               return (
-                <Card key={index} className={`transition-all duration-300 ${
-                  tool.available 
-                    ? 'hover:shadow-lg cursor-pointer' 
-                    : 'opacity-60 cursor-not-allowed'
-                }`}>
+                <Card 
+                  key={index} 
+                  className={`transition-all duration-300 cursor-pointer ${
+                    activeCalculator === tool.id
+                      ? 'ring-2 ring-primary shadow-lg bg-primary/5'
+                      : 'hover:shadow-lg'
+                  }`}
+                  onClick={() => setActiveCalculator(tool.id)}
+                >
                   <CardHeader className="text-center">
                     <div className="bg-gradient-to-br from-primary/20 to-gold/20 p-4 rounded-lg mx-auto w-fit mb-4">
                       <IconComponent className="h-8 w-8 text-primary" />
@@ -82,11 +112,13 @@ const CalculatorPage = () => {
                     <CardDescription>{tool.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    {tool.available ? (
-                      <span className="text-primary font-medium">Available</span>
-                    ) : (
-                      <span className="text-muted-foreground">Coming Soon</span>
-                    )}
+                    <Button 
+                      variant={activeCalculator === tool.id ? "default" : "outline"}
+                      size="sm"
+                      className="w-full"
+                    >
+                      {activeCalculator === tool.id ? "Active" : "Use Calculator"}
+                    </Button>
                   </CardContent>
                 </Card>
               );
