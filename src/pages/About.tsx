@@ -13,7 +13,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About <span className="text-primary">WealthWise</span> <span className="text-gold">Capital</span>
+              About <span className="text-primary">AditionMoney</span> <span className="text-gold">Services</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Your trusted partner in wealth creation and preservation with over 20 years of expertise in financial services
@@ -29,7 +29,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <p className="text-muted-foreground mb-6">
-                Founded with a vision to democratize wealth management, WealthWise Capital has been at the forefront 
+                Founded with a vision to democratize wealth management, AditionMoney Services has been at the forefront 
                 of financial innovation for over two decades. We believe that every individual deserves access to 
                 professional financial guidance and world-class investment solutions.
               </p>
@@ -73,15 +73,15 @@ const About = () => {
               <div className="grid md:grid-cols-3 gap-8 items-center">
                 <div className="text-center">
                   <div className="w-32 h-32 bg-gradient-to-br from-primary to-gold rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-white">JD</span>
+                    <span className="text-4xl font-bold text-white">KJ</span>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">John Doe</h3>
+                  <h3 className="text-xl font-bold text-foreground">K Jeevan Reddy</h3>
                   <p className="text-muted-foreground">Founder & CEO</p>
                 </div>
                 
                 <div className="md:col-span-2">
                   <p className="text-muted-foreground mb-4">
-                    With over 20 years of experience in financial services, John Doe founded WealthWise Capital 
+                    With over 20 years of experience in financial services, K Jeevan Reddy founded AditionMoney Services 
                     with a vision to make professional wealth management accessible to all. His expertise spans 
                     across mutual funds, portfolio management, and alternative investments.
                   </p>

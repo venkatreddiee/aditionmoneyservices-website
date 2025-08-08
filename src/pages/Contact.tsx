@@ -13,25 +13,23 @@ const Contact = () => {
       icon: MapPin,
       title: "Office Address",
       details: [
-        "WealthWise Capital Pvt Ltd",
-        "123 Business District, Financial Street",
-        "Mumbai, Maharashtra 400001"
+        "AditionMoney Services Pvt Ltd",
+        "6-3-902/A, G-24, Central Court Apts",
+        "Rajbhavan Road, Somajiguda, Hyderabad, Telangana 500082"
       ]
     },
     {
       icon: Phone,
       title: "Phone",
       details: [
-        "+91 98765 43210",
-        "+91 22 2345 6789"
+        "+91 9849551789"
       ]
     },
     {
       icon: Mail,
       title: "Email",
       details: [
-        "info@wealthwisecapital.com",
-        "support@wealthwisecapital.com"
+        "aditionmoneyservices@gmail.com"
       ]
     },
     {
@@ -219,7 +217,7 @@ const Contact = () => {
                   <div className="text-center">
                     <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                     <p className="text-foreground font-medium">Interactive Map</p>
-                    <p className="text-muted-foreground text-sm">Mumbai Office Location</p>
+                    <p className="text-muted-foreground text-sm">Hyderabad Office Location</p>
                   </div>
                 </div>
               </CardContent>

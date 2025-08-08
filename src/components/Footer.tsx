@@ -87,7 +87,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="text-2xl font-bold mb-4">
-                WealthWise <span className="text-gold">Capital</span>
+                AditionMoney <span className="text-gold">Services</span>
               </div>
               <p className="text-primary-foreground/80 mb-6 text-sm leading-relaxed">
                 Your trusted financial partner for wealth creation, preservation, and growth. 
@@ -98,15 +98,15 @@ const Footer = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center space-x-3 text-sm">
                   <Phone className="h-4 w-4 text-gold" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 9849551789</span>
                 </div>
                 <div className="flex items-center space-x-3 text-sm">
                   <Mail className="h-4 w-4 text-gold" />
-                  <span>info@wealthwisecapital.com</span>
+                  <span>aditionmoneyservices@gmail.com</span>
                 </div>
                 <div className="flex items-start space-x-3 text-sm">
                   <MapPin className="h-4 w-4 text-gold mt-0.5" />
-                  <span>Mumbai, Maharashtra, India</span>
+                  <span>6-3-902/A, G-24, Central Court Apts, Rajbhavan Road, Somajiguda, Hyderabad, Telangana 500082</span>
                 </div>
               </div>
 
@@ -152,7 +152,7 @@ const Footer = () => {
         <div className="py-6">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="text-sm text-primary-foreground/80">
-              © 2024 WealthWise Capital. All rights reserved.
+              © 2024 AditionMoney Services. All rights reserved.
             </div>
             
             <div className="text-xs text-primary-foreground/60 text-center lg:text-right max-w-2xl">

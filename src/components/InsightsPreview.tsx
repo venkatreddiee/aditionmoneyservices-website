@@ -35,7 +35,7 @@ const InsightsPreview = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          'https://api.rss2json.com/v1/api.json?rss_url=https://www.moneycontrol.com/rss/mutual-funds.xml&count=6'
+          'https://api.rss2json.com/v1/api.json?rss_url=https://www.moneycontrol.com/rss/mutual-funds.xml'
         );
         
         if (!response.ok) {
@@ -45,7 +45,7 @@ const InsightsPreview = () => {
         const data = await response.json();
         
         if (data.status === 'ok' && data.items) {
-          setRssArticles(data.items.slice(0, 6));
+          setRssArticles(data.items.slice(0, 5));
         } else {
           throw new Error('Invalid RSS response');
         }

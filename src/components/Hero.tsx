@@ -51,7 +51,7 @@ const Hero = () => {
           {/* Right Content - Features */}
           <div className="space-y-6">
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20">
-              <h3 className="text-xl font-semibold mb-4">Why Choose WealthWise Capital?</h3>
+              <h3 className="text-xl font-semibold mb-4">Why Choose AditionMoney Services?</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <Shield className="h-6 w-6 text-gold mt-1" />
