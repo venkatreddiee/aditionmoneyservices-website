@@ -45,7 +45,7 @@ const Contact = () => {
 
   const services = [
     "Mutual Fund Investment",
-    "Portfolio Management Services",
+    
     "Insurance Planning",
     "Tax Planning",
     "Retirement Planning",
@@ -195,10 +195,6 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Button variant="outline" className="w-full justify-start">
-                  <MessageCircle className="h-4 w-4 mr-2" />
-                  Start Live Chat
-                </Button>
                 <Button variant="outline" className="w-full justify-start">
                   <Calendar className="h-4 w-4 mr-2" />
                   Schedule a Callback

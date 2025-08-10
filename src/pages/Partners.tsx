@@ -182,45 +182,6 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* Regulatory Compliance */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Regulatory Compliance</h2>
-            <p className="text-muted-foreground">We are registered and regulated by leading financial authorities</p>
-          </div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            <Card className="text-center">
-              <CardHeader>
-                <CardTitle>AMFI</CardTitle>
-                <CardDescription>Mutual Fund Distributor</CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader>
-                <CardTitle>SEBI</CardTitle>
-                <CardDescription>Investment Advisor</CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader>
-                <CardTitle>IRDA</CardTitle>
-                <CardDescription>Insurance Broker</CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader>
-                <CardTitle>RBI</CardTitle>
-                <CardDescription>NBFC Compliance</CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

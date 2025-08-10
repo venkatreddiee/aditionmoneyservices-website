@@ -32,14 +32,6 @@ const Products = () => {
       cta: "Start SIP"
     },
     {
-      icon: Briefcase,
-      title: "Portfolio Management Services",
-      description: "Professional portfolio management for high net worth individuals",
-      features: ["Customized portfolios", "Professional management", "Direct equity", "Regular monitoring"],
-      eligibility: "Minimum: ₹50 Lakhs",
-      cta: "Learn More"
-    },
-    {
       icon: Banknote,
       title: "Alternative Investment Funds",
       description: "Access to exclusive investment opportunities",

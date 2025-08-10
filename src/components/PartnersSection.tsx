@@ -59,7 +59,7 @@ const PartnersSection = () => {
       description: "Managed across various asset classes"
     },
     {
-      metric: "25+",
+      metric: "50+",
       label: "Partner AMCs",
       description: "Leading mutual fund companies"
     }
