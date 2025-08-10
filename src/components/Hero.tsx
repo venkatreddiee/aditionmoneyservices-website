@@ -22,12 +22,16 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="group">
-                Start Your Investment Journey
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hero" size="xl" className="group" asChild>
+                <a href="/contact">
+                  Start Your Investment Journey
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button variant="outline" size="xl" className="bg-background/10 border-primary-foreground/30 text-primary-foreground hover:bg-background/20">
-                Calculate SIP Returns
+              <Button variant="outline" size="xl" className="bg-background/10 border-primary-foreground/30 text-primary-foreground hover:bg-background/20" asChild>
+                <a href="/calculator">
+                  Calculate SIP Returns
+                </a>
               </Button>
             </div>
 
@@ -38,11 +42,11 @@ const Hero = () => {
                 <div className="text-sm text-primary-foreground/80">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold">1000+</div>
+                <div className="text-3xl font-bold text-gold">500+</div>
                 <div className="text-sm text-primary-foreground/80">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold">₹500Cr+</div>
+                <div className="text-3xl font-bold text-gold">₹100Cr+</div>
                 <div className="text-sm text-primary-foreground/80">Assets Under Advisory</div>
               </div>
             </div>
@@ -56,8 +60,8 @@ const Hero = () => {
                 <div className="flex items-start space-x-3">
                   <Shield className="h-6 w-6 text-gold mt-1" />
                   <div>
-                    <h4 className="font-medium">SEBI Registered</h4>
-                    <p className="text-sm text-primary-foreground/80">Fully compliant and regulated financial advisory</p>
+                    <h4 className="font-medium">AMFI Registered</h4>
+                    <p className="text-sm text-primary-foreground/80">Authorized distributor for leading mutual funds</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">

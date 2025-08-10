@@ -35,13 +35,13 @@ const Partners = () => {
   const achievements = [
     {
       icon: Users,
-      title: "5000+",
+      title: "500+",
       description: "Happy Clients",
       color: "text-primary"
     },
     {
       icon: TrendingUp,
-      title: "₹500+ Cr",
+      title: "₹100+ Cr",
       description: "Assets Under Advisory",
       color: "text-gold"
     },

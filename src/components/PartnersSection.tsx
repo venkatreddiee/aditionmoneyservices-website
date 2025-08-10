@@ -49,12 +49,12 @@ const PartnersSection = () => {
       description: "Proven track record in financial advisory"
     },
     {
-      metric: "1000+",
+      metric: "500+",
       label: "Satisfied Clients",
       description: "Individual and institutional investors"
     },
     {
-      metric: "₹500Cr+",
+      metric: "₹100Cr+",
       label: "Assets Under Advisory",
       description: "Managed across various asset classes"
     },
@@ -68,38 +68,6 @@ const PartnersSection = () => {
   return (
     <section className="py-16 lg:py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Certifications & Compliance */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Certifications & Compliance
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
-            We maintain the highest standards of regulatory compliance and professional certifications 
-            to ensure your investments are in safe and trusted hands.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
-              <Card key={index} className="border-border/50 shadow-card hover:shadow-elegant transition-all duration-300">
-                <CardHeader className="text-center pb-4">
-                  <div className="mx-auto p-4 rounded-full bg-gradient-to-br from-primary to-accent text-primary-foreground mb-4">
-                    <cert.icon className="h-8 w-8" />
-                  </div>
-                  <CardTitle className="text-xl">{cert.title}</CardTitle>
-                  <Badge variant="outline" className="mx-auto">
-                    {cert.subtitle}
-                  </Badge>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-muted-foreground mb-3">{cert.description}</p>
-                  <div className="text-sm font-mono text-primary bg-primary/10 rounded px-2 py-1 inline-block">
-                    {cert.number}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
 
         {/* Achievements */}
         <div className="mb-16">

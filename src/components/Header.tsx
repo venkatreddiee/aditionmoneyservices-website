@@ -40,16 +40,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Contact Button */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center text-sm text-muted-foreground">
-              <Phone className="h-4 w-4 mr-2" />
-              +91 9849551789
-            </div>
-            <Button variant="gold" size="sm">
-              Get Started
-            </Button>
-          </div>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
@@ -77,15 +67,6 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-3 border-t border-border">
-                <div className="flex items-center text-sm text-muted-foreground mb-3">
-                  <Phone className="h-4 w-4 mr-2" />
-                  +91 9849551789
-                </div>
-                <Button variant="gold" size="sm" className="w-full">
-                  Get Started
-                </Button>
-              </div>
             </nav>
           </div>
         )}

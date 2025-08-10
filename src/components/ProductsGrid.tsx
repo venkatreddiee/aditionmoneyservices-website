@@ -34,13 +34,6 @@ const ProductsGrid = () => {
       color: "text-purple-600"
     },
     {
-      icon: TrendingUp,
-      title: "Portfolio Management (PMS)",
-      description: "Professional portfolio management for high net worth individuals",
-      features: ["Min ₹50 lakhs", "Customized strategy", "Direct equity"],
-      color: "text-orange-600"
-    },
-    {
       icon: Target,
       title: "Alternative Investment Funds",
       description: "Access to private equity, real estate, and alternative strategies",

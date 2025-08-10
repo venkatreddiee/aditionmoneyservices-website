@@ -18,38 +18,22 @@ const Footer = () => {
       "Corporate Fixed Deposits",
       "Bonds & NCDs",
       "Mutual Funds",
-      "Portfolio Management",
       "Alternative Investment Funds",
       "Insurance Solutions"
     ],
     "Resources": [
       "SIP Calculator",
-      "Tax Calculator", 
       "Goal Planner",
-      "Market Insights",
-      "Investment Guide",
-      "Download Center"
+      "Market Insights"
     ],
     "Company": [
       "About Us",
       "Our Team",
-      "Careers",
-      "Press Release",
-      "Awards & Recognition",
       "Contact Us"
-    ],
-    "Legal": [
-      "Privacy Policy",
-      "Terms of Service",
-      "Regulatory Disclosures",
-      "Grievance Redressal",
-      "Risk Disclosure",
-      "Investor Charter"
     ]
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Youtube, href: "#", label: "YouTube" }
@@ -156,13 +140,9 @@ const Footer = () => {
             </div>
             
             <div className="text-xs text-primary-foreground/60 text-center lg:text-right max-w-2xl">
-              <p className="mb-1">
+              <p>
                 <strong>Important Disclaimer:</strong> Mutual fund investments are subject to market risks. 
                 Please read all scheme related documents carefully before investing.
-              </p>
-              <p>
-                SEBI Registration No.: INA000012345 | ARN: 123456 | 
-                This website is for informational purposes only and does not constitute investment advice.
               </p>
             </div>
           </div>

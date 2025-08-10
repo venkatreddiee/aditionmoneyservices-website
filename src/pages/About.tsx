@@ -98,45 +98,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Certifications & Compliance */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Certifications & Compliance</h2>
-            <p className="text-muted-foreground">Regulated and certified for your peace of mind</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle className="text-lg">AMFI Registration</CardTitle>
-                <CardDescription>ARN-12345</CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle className="text-lg">SEBI Registered</CardTitle>
-                <CardDescription>Investment Advisor</CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle className="text-lg">CFP Certification</CardTitle>
-                <CardDescription>Certified Financial Planner</CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle className="text-lg">ISO Certified</CardTitle>
-                <CardDescription>Quality Management</CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
